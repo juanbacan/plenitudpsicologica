@@ -27,4 +27,11 @@ add_action('admin_menu', function () {
         'edit.php?post_type=pregunta'
     );
 
+    add_submenu_page(
+        'simulador',
+        'Simuladores',
+        'Simuladores',
+        'manage_options',
+        'edit.php?post_type=simulador'
+    );
 });

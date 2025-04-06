@@ -7,6 +7,10 @@ add_action('admin_head', function () {
     }
 });
 
+add_action('add_meta_boxes', function () {
+    remove_meta_box('astra_settings_meta_box', 'pregunta', 'normal');
+}, 99);
+
 add_action('init', function () {
     register_post_type('pregunta', [
         'labels' => [
@@ -35,7 +39,7 @@ add_action('init', function () {
         'public' => true,
         'has_archive' => false,
         'show_in_menu' => false, // No mostrar en el menú lateral directamente
-        'supports' => ['editor'], // <-- AQUI está la solución
+        'supports' => ['editor', 'slug'], // <-- AQUI está la solución
         'taxonomies' => ['categoria'],
         'show_in_rest' => false, // Para soporte con Gutenberg
     ]);
