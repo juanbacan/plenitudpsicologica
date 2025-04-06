@@ -3,8 +3,8 @@
 .env.*
 
 # Ignorar volúmenes de datos y sitios
-# volumes/db/
-# volumes/site/
+volumes/db/
+volumes/site/
 
 # Ignorar configuraciones específicas del entorno
 # volumes/config/php/conf.d/custom-php.ini
