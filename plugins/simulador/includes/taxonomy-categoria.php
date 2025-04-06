@@ -8,11 +8,34 @@ add_action('init', function () {
             'singular_name' => 'Categoría',
         ],
         'hierarchical' => true,
+        'show_in_menu' => false,
         'show_in_rest' => true,
         'show_ui' => true,
         'show_admin_column' => true,
     ]);
 });
+
+
+add_filter('parent_file', function ($parent_file) {
+    global $current_screen;
+
+    if ($current_screen->taxonomy === 'categoria' && $current_screen->post_type === 'pregunta') {
+        $parent_file = 'simulador'; // marca "Simulador" como menú padre activo
+    }
+
+    return $parent_file;
+});
+
+add_filter('submenu_file', function ($submenu_file) {
+    global $current_screen;
+
+    if ($current_screen->taxonomy === 'categoria' && $current_screen->post_type === 'pregunta') {
+        $submenu_file = 'edit-tags.php?taxonomy=categoria&post_type=pregunta'; // marca el submenú como activo
+    }
+
+    return $submenu_file;
+});
+
 
 // Mostrar campo "Descripción corta" al AÑADIR una nueva categoría
 add_action('categoria_add_form_fields', function () {

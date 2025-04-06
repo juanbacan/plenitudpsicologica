@@ -1,15 +1,5 @@
 <?php
-// Ocultar el bloque de "Campos personalizados" en preguntas
-add_action('admin_head', function () {
-    $screen = get_current_screen();
-    if ($screen->post_type === 'pregunta') {
-        echo '<style>#postcustom { display: none !important; }</style>';
-    }
-});
 
-add_action('add_meta_boxes', function () {
-    remove_meta_box('astra_settings_meta_box', 'pregunta', 'normal');
-}, 99);
 
 add_action('init', function () {
     register_post_type('pregunta', [

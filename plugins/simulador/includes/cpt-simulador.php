@@ -17,7 +17,7 @@ add_action('init', function () {
         ],
         'public' => true,
         'has_archive' => false,
-        'show_in_menu' => 'simulador',
+        'show_in_menu' => false,
         'supports' => ['title', 'editor', 'slug'],
         'show_in_rest' => false
     ]);
