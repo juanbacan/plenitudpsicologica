@@ -1,0 +1,1344 @@
+{
+    "manifest_version": "1.0.9",
+    "title": "Language School",
+    "page_builder": "elementor",
+    "kit_version": "2.0.1",
+    "templates": [
+        {
+            "name": "Home 1",
+            "screenshot": "screenshots\/home-1.jpg",
+            "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home 2",
+            "screenshot": "screenshots\/home-2.jpg",
+            "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home 3",
+            "screenshot": "screenshots\/home-3-pro.jpg",
+            "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home 4",
+            "screenshot": "screenshots\/home-4-pro.jpg",
+            "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About Us 1",
+            "screenshot": "screenshots\/about-us-1.jpg",
+            "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About Us 2",
+            "screenshot": "screenshots\/about-us-2-pro.jpg",
+            "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Language Programs",
+            "screenshot": "screenshots\/language-programs.jpg",
+            "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Language Programs 2",
+            "screenshot": "screenshots\/language-programs-2-pro.jpg",
+            "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Program",
+            "screenshot": "screenshots\/program.jpg",
+            "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Courses 1",
+            "screenshot": "screenshots\/courses-1.jpg",
+            "source": "templates\/courses-1-9c47aecb15fb83dfc73285ecb6a9b9dd.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Courses 2",
+            "screenshot": "screenshots\/courses-2-pro.jpg",
+            "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq-a0297abd60079d09a2b3c846acc8bc83.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Pricing",
+            "screenshot": "screenshots\/pricing-pro.jpg",
+            "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact 1",
+            "screenshot": "screenshots\/contact-1-pro.jpg",
+            "source": "templates\/contact-1-3000be71877e2d021b25bb4b7a7ef6e6.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact 2",
+            "screenshot": "screenshots\/contact-2.jpg",
+            "source": "templates\/contact-2-284a2d5dd527abb3f7d402a3f991dfd5.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor",
+            "version": "2.9.6",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor Pro",
+            "version": "2.9.6",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "required_css": [],
+    "images": [
+        {
+            "filename": "image-from-rawpixel-id-586231-jpeg.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/image-from-rawpixel-id-586231-jpeg-500x333.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 279800,
+            "dimensions": [
+                2500,
+                1667
+            ]
+        },
+        {
+            "filename": "transparent-min.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/transparent-min.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                }
+            ],
+            "filesize": 148,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "dot-bg-mono.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/dot-bg-mono-500x333.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                },
+                {
+                    "source": "templates\/courses-1-9c47aecb15fb83dfc73285ecb6a9b9dd.json",
+                    "name": "Courses 1"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/faq-a0297abd60079d09a2b3c846acc8bc83.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates\/contact-1-3000be71877e2d021b25bb4b7a7ef6e6.json",
+                    "name": "Contact 1"
+                }
+            ],
+            "filesize": 432172,
+            "dimensions": [
+                2500,
+                1666
+            ]
+        },
+        {
+            "filename": "image-from-rawpixel-id-478385-recolor.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/image-from-rawpixel-id-478385-recolor-500x500.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                },
+                {
+                    "source": "templates\/faq-a0297abd60079d09a2b3c846acc8bc83.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/contact-1-3000be71877e2d021b25bb4b7a7ef6e6.json",
+                    "name": "Contact 1"
+                }
+            ],
+            "filesize": 196441,
+            "dimensions": [
+                1200,
+                1200
+            ]
+        },
+        {
+            "filename": "image-from-rawpixel-id-477969-recolor.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/image-from-rawpixel-id-477969-recolor-500x400.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 1475612,
+            "dimensions": [
+                3500,
+                2799
+            ]
+        },
+        {
+            "filename": "image-from-rawpixel-id-479762-recolor.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/image-from-rawpixel-id-479762-recolor-500x364.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/courses-1-9c47aecb15fb83dfc73285ecb6a9b9dd.json",
+                    "name": "Courses 1"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                }
+            ],
+            "filesize": 306881,
+            "dimensions": [
+                1200,
+                873
+            ]
+        },
+        {
+            "filename": "004-united-kingdom.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/004-united-kingdom.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 3361,
+            "dimensions": [
+                128,
+                128
+            ]
+        },
+        {
+            "filename": "005-mexico.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/005-mexico.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 1162,
+            "dimensions": [
+                128,
+                128
+            ]
+        },
+        {
+            "filename": "001-south-korea.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/001-south-korea.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 2656,
+            "dimensions": [
+                128,
+                128
+            ]
+        },
+        {
+            "filename": "006-russia.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/006-russia.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                }
+            ],
+            "filesize": 520,
+            "dimensions": [
+                128,
+                128
+            ]
+        },
+        {
+            "filename": "sweden.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/sweden-500x500.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 1973,
+            "dimensions": [
+                512,
+                512
+            ]
+        },
+        {
+            "filename": "002-france.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/002-france.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                }
+            ],
+            "filesize": 498,
+            "dimensions": [
+                128,
+                128
+            ]
+        },
+        {
+            "filename": "bogdan-glisik-670336-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/bogdan-glisik-670336-unsplash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                },
+                {
+                    "source": "templates\/courses-1-9c47aecb15fb83dfc73285ecb6a9b9dd.json",
+                    "name": "Courses 1"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates\/contact-1-3000be71877e2d021b25bb4b7a7ef6e6.json",
+                    "name": "Contact 1"
+                }
+            ],
+            "filesize": 46945,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "jurica-koletic-317414-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/jurica-koletic-317414-unsplash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                },
+                {
+                    "source": "templates\/courses-1-9c47aecb15fb83dfc73285ecb6a9b9dd.json",
+                    "name": "Courses 1"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 42844,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "christopher-rusev-1062478-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/christopher-rusev-1062478-unsplash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 53542,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "lucas-sankey-378674-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/lucas-sankey-378674-unsplash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/contact-1-3000be71877e2d021b25bb4b7a7ef6e6.json",
+                    "name": "Contact 1"
+                }
+            ],
+            "filesize": 44469,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "vinicius-wiesehofer-658455-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/vinicius-wiesehofer-658455-unsplash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 60105,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "pexels-photo-937481-transparentcrop.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/pexels-photo-937481-transparentcrop.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 171473,
+            "dimensions": [
+                400,
+                399
+            ]
+        },
+        {
+            "filename": "heidi-sandstrom-187259-unsplash-min.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/heidi-sandstrom-187259-unsplash-min-500x333.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-1-d717786fc61dbe3e5c58bc1d2761d443.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/contact-1-3000be71877e2d021b25bb4b7a7ef6e6.json",
+                    "name": "Contact 1"
+                }
+            ],
+            "filesize": 261385,
+            "dimensions": [
+                1900,
+                1267
+            ]
+        },
+        {
+            "filename": "language-school-hero_1920.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/language-school-hero_1920-500x300.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/contact-2-284a2d5dd527abb3f7d402a3f991dfd5.json",
+                    "name": "Contact 2"
+                }
+            ],
+            "filesize": 290683,
+            "dimensions": [
+                1920,
+                1152
+            ]
+        },
+        {
+            "filename": "just-dots.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/just-dots-500x129.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                }
+            ],
+            "filesize": 83483,
+            "dimensions": [
+                2500,
+                645
+            ]
+        },
+        {
+            "filename": "flag-3.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/flag-3.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 21883,
+            "dimensions": [
+                150,
+                90
+            ]
+        },
+        {
+            "filename": "454707-recolor.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/454707-recolor-500x364.png",
+            "templates": [
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/faq-a0297abd60079d09a2b3c846acc8bc83.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates\/contact-1-3000be71877e2d021b25bb4b7a7ef6e6.json",
+                    "name": "Contact 1"
+                }
+            ],
+            "filesize": 226154,
+            "dimensions": [
+                1200,
+                873
+            ]
+        },
+        {
+            "filename": "michael-frattaroli-234665-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/michael-frattaroli-234665-unsplash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-2-6512fbe3765897903b66da39c0f276bb.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 28000,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "language-school-peoplea.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/language-school-peoplea-500x318.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-cc018bc3a88ea9bf1d58e49a2d33aea2.json",
+                    "name": "Language Programs"
+                },
+                {
+                    "source": "templates\/courses-1-9c47aecb15fb83dfc73285ecb6a9b9dd.json",
+                    "name": "Courses 1"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                }
+            ],
+            "filesize": 224987,
+            "dimensions": [
+                1200,
+                762
+            ]
+        },
+        {
+            "filename": "quotes.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/quotes.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                }
+            ],
+            "filesize": 4975,
+            "dimensions": [
+                200,
+                142
+            ]
+        },
+        {
+            "filename": "humphrey-muleba-795250-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/humphrey-muleba-795250-unsplash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-3-03ee0e88ebf0d402bbae59dee19dac8d.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                },
+                {
+                    "source": "templates\/pricing-30b6bc9bad5f9d33340a7410c7388c70.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates\/contact-1-3000be71877e2d021b25bb4b7a7ef6e6.json",
+                    "name": "Contact 1"
+                }
+            ],
+            "filesize": 40593,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "003-germany.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/003-germany.png",
+            "templates": [
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                }
+            ],
+            "filesize": 514,
+            "dimensions": [
+                128,
+                128
+            ]
+        },
+        {
+            "filename": "greece.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/greece-500x500.png",
+            "templates": [
+                {
+                    "source": "templates\/home-4-b1cb26e6421b68cf2c5d80737e63ab3b.json",
+                    "name": "Home 4"
+                },
+                {
+                    "source": "templates\/language-programs-2-7ce4e4072b31344c56bdba458f221717.json",
+                    "name": "Language Programs 2"
+                },
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                }
+            ],
+            "filesize": 4893,
+            "dimensions": [
+                512,
+                512
+            ]
+        },
+        {
+            "filename": "mimi-thian-737634-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/mimi-thian-737634-unsplash-500x340.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us-1-ba8250132b7c703e1fc016f1bab9cc83.json",
+                    "name": "About Us 1"
+                },
+                {
+                    "source": "templates\/program-0e0fb56bf853d406b4b081335ef84f94.json",
+                    "name": "Program"
+                }
+            ],
+            "filesize": 265277,
+            "dimensions": [
+                1900,
+                1293
+            ]
+        },
+        {
+            "filename": "image-from-rawpixel-id-586255-jpeg.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/image-from-rawpixel-id-586255-jpeg-500x334.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us-2-4bdd555d8bbfad09681c997551812290.json",
+                    "name": "About Us 2"
+                }
+            ],
+            "filesize": 170745,
+            "dimensions": [
+                1920,
+                1281
+            ]
+        },
+        {
+            "filename": "pete-bellis-639322-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/pete-bellis-639322-unsplash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                }
+            ],
+            "filesize": 37662,
+            "dimensions": [
+                300,
+                300
+            ]
+        },
+        {
+            "filename": "lucas-sankey-378674-unsp2334lash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-119\/wp-content\/uploads\/sites\/122\/2018\/10\/lucas-sankey-378674-unsp2334lash.jpg",
+            "templates": [
+                {
+                    "source": "templates\/courses-2-e9f78976e470c6452a99913921253960.json",
+                    "name": "Courses 2"
+                }
+            ],
+            "filesize": 31419,
+            "dimensions": [
+                300,
+                300
+            ]
+        }
+    ]
+}

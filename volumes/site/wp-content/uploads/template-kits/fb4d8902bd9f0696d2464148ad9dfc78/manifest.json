@@ -1,0 +1,1005 @@
+{
+    "manifest_version": "1.0.9",
+    "title": "Tech (general business)",
+    "page_builder": "elementor",
+    "kit_version": "2.0.1",
+    "templates": [
+        {
+            "name": "Home 1",
+            "screenshot": "screenshots\/home-1.jpg",
+            "source": "templates\/home-1-cb7c9559203f4936baba03d8729f1925.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home 2 (Pro)",
+            "screenshot": "screenshots\/home-2-pro-.jpg",
+            "source": "templates\/home-2-pro-d3a5937fbeefa4322e43f669e04c4a78.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home 3",
+            "screenshot": "screenshots\/home-3.jpg",
+            "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Features",
+            "screenshot": "screenshots\/features.jpg",
+            "source": "templates\/features-4e9715ce6c6be60cbf567a3cba4ae3c1.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Benefits (Pro)",
+            "screenshot": "screenshots\/benefits-pro-.jpg",
+            "source": "templates\/benefits-pro-49b193c52d46999604daaccd1011dedd.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Services (Pro)",
+            "screenshot": "screenshots\/services-pro-.jpg",
+            "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Services 2",
+            "screenshot": "screenshots\/services-2.jpg",
+            "source": "templates\/services-2-40b12d9f08915ba5447d2bbfb62b83f0.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Product",
+            "screenshot": "screenshots\/product.jpg",
+            "source": "templates\/product-20bc5fe13aa1013a2f9cc478f6f14f8a.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Product",
+            "screenshot": "screenshots\/single-product.jpg",
+            "source": "templates\/single-product-e2e01a302162524d8bc024dcacd53cdb.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Pricing (Pro)",
+            "screenshot": "screenshots\/pricing-pro-.jpg",
+            "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About",
+            "screenshot": "screenshots\/about.jpg",
+            "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About 2",
+            "screenshot": "screenshots\/about-2.jpg",
+            "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Careers",
+            "screenshot": "screenshots\/careers.jpg",
+            "source": "templates\/careers-389537e2f3d711cefe05223e61cb4cf5.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact (Pro)",
+            "screenshot": "screenshots\/contact-pro-.jpg",
+            "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact 2",
+            "screenshot": "screenshots\/contact-2.jpg",
+            "source": "templates\/contact-2-d48a03ce8beacb3185876c1160c9a66b.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor",
+            "version": "2.9.6",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor Pro",
+            "version": "2.9.6",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "required_css": [
+        {
+            "name": "Custom CSS",
+            "description": "These styles are added to the WordPress Customizer.",
+            "file": "css\/customizer.css"
+        }
+    ],
+    "images": [
+        {
+            "filename": "huumans_wireframe1.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/huumans_wireframe1-500x459.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-cb7c9559203f4936baba03d8729f1925.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/features-4e9715ce6c6be60cbf567a3cba4ae3c1.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates\/product-20bc5fe13aa1013a2f9cc478f6f14f8a.json",
+                    "name": "Product"
+                },
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                }
+            ],
+            "filesize": 71793,
+            "dimensions": [
+                740,
+                680
+            ]
+        },
+        {
+            "filename": "standing-9.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/standing-9.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-cb7c9559203f4936baba03d8729f1925.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-2-pro-d3a5937fbeefa4322e43f669e04c4a78.json",
+                    "name": "Home 2 (Pro)"
+                },
+                {
+                    "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 25987,
+            "dimensions": [
+                380,
+                480
+            ]
+        },
+        {
+            "filename": "share.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/share.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-cb7c9559203f4936baba03d8729f1925.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/features-4e9715ce6c6be60cbf567a3cba4ae3c1.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                },
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                },
+                {
+                    "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+                    "name": "Contact (Pro)"
+                }
+            ],
+            "filesize": 2588,
+            "dimensions": [
+                60,
+                60
+            ]
+        },
+        {
+            "filename": "startup-1.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/startup-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-cb7c9559203f4936baba03d8729f1925.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/features-4e9715ce6c6be60cbf567a3cba4ae3c1.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                },
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                },
+                {
+                    "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+                    "name": "Contact (Pro)"
+                }
+            ],
+            "filesize": 2338,
+            "dimensions": [
+                61,
+                61
+            ]
+        },
+        {
+            "filename": "support.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/support.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-cb7c9559203f4936baba03d8729f1925.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/features-4e9715ce6c6be60cbf567a3cba4ae3c1.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                },
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                },
+                {
+                    "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+                    "name": "Contact (Pro)"
+                }
+            ],
+            "filesize": 2240,
+            "dimensions": [
+                52,
+                60
+            ]
+        },
+        {
+            "filename": "aum-cc02-recolor2.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/aum-cc02-recolor2-500x495.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-cb7c9559203f4936baba03d8729f1925.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                },
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                }
+            ],
+            "filesize": 233797,
+            "dimensions": [
+                775,
+                767
+            ]
+        },
+        {
+            "filename": "huumans3.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/huumans3-500x400.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1-cb7c9559203f4936baba03d8729f1925.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/features-4e9715ce6c6be60cbf567a3cba4ae3c1.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates\/benefits-pro-49b193c52d46999604daaccd1011dedd.json",
+                    "name": "Benefits (Pro)"
+                },
+                {
+                    "source": "templates\/product-20bc5fe13aa1013a2f9cc478f6f14f8a.json",
+                    "name": "Product"
+                },
+                {
+                    "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                },
+                {
+                    "source": "templates\/careers-389537e2f3d711cefe05223e61cb4cf5.json",
+                    "name": "Careers"
+                }
+            ],
+            "filesize": 872580,
+            "dimensions": [
+                3500,
+                2801
+            ]
+        },
+        {
+            "filename": "Whiteboard.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/Whiteboard-500x459.png",
+            "templates": [
+                {
+                    "source": "templates\/home-2-pro-d3a5937fbeefa4322e43f669e04c4a78.json",
+                    "name": "Home 2 (Pro)"
+                },
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                },
+                {
+                    "source": "templates\/product-20bc5fe13aa1013a2f9cc478f6f14f8a.json",
+                    "name": "Product"
+                },
+                {
+                    "source": "templates\/single-product-e2e01a302162524d8bc024dcacd53cdb.json",
+                    "name": "Single Product"
+                },
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                }
+            ],
+            "filesize": 108882,
+            "dimensions": [
+                740,
+                680
+            ]
+        },
+        {
+            "filename": "huumans-sitting-4.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/huumans-sitting-4.png",
+            "templates": [
+                {
+                    "source": "templates\/home-2-pro-d3a5937fbeefa4322e43f669e04c4a78.json",
+                    "name": "Home 2 (Pro)"
+                },
+                {
+                    "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 18869,
+            "dimensions": [
+                380,
+                400
+            ]
+        },
+        {
+            "filename": "huumans4.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/huumans4-500x491.png",
+            "templates": [
+                {
+                    "source": "templates\/home-2-pro-d3a5937fbeefa4322e43f669e04c4a78.json",
+                    "name": "Home 2 (Pro)"
+                },
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/features-4e9715ce6c6be60cbf567a3cba4ae3c1.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates\/services-2-40b12d9f08915ba5447d2bbfb62b83f0.json",
+                    "name": "Services 2"
+                },
+                {
+                    "source": "templates\/single-product-e2e01a302162524d8bc024dcacd53cdb.json",
+                    "name": "Single Product"
+                },
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                },
+                {
+                    "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+                    "name": "Contact (Pro)"
+                }
+            ],
+            "filesize": 84323,
+            "dimensions": [
+                740,
+                726
+            ]
+        },
+        {
+            "filename": "balazs-ketyi-9VzoRKfBsMM-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/balazs-ketyi-9VzoRKfBsMM-unsplash-500x625.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-2-pro-d3a5937fbeefa4322e43f669e04c4a78.json",
+                    "name": "Home 2 (Pro)"
+                },
+                {
+                    "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                }
+            ],
+            "filesize": 2654241,
+            "dimensions": [
+                1920,
+                2400
+            ]
+        },
+        {
+            "filename": "huumans5.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/huumans5-500x495.png",
+            "templates": [
+                {
+                    "source": "templates\/home-2-pro-d3a5937fbeefa4322e43f669e04c4a78.json",
+                    "name": "Home 2 (Pro)"
+                },
+                {
+                    "source": "templates\/features-4e9715ce6c6be60cbf567a3cba4ae3c1.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates\/services-2-40b12d9f08915ba5447d2bbfb62b83f0.json",
+                    "name": "Services 2"
+                },
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                },
+                {
+                    "source": "templates\/contact-2-d48a03ce8beacb3185876c1160c9a66b.json",
+                    "name": "Contact 2"
+                }
+            ],
+            "filesize": 270354,
+            "dimensions": [
+                775,
+                767
+            ]
+        },
+        {
+            "filename": "undraw_maker_launch_crhe-recolor2.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/undraw_maker_launch_crhe-recolor2.png",
+            "templates": [
+                {
+                    "source": "templates\/home-2-pro-d3a5937fbeefa4322e43f669e04c4a78.json",
+                    "name": "Home 2 (Pro)"
+                },
+                {
+                    "source": "templates\/benefits-pro-49b193c52d46999604daaccd1011dedd.json",
+                    "name": "Benefits (Pro)"
+                },
+                {
+                    "source": "templates\/services-2-40b12d9f08915ba5447d2bbfb62b83f0.json",
+                    "name": "Services 2"
+                }
+            ],
+            "filesize": 41398,
+            "dimensions": [
+                430,
+                297
+            ]
+        },
+        {
+            "filename": "Home.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/Home-500x459.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/product-20bc5fe13aa1013a2f9cc478f6f14f8a.json",
+                    "name": "Product"
+                },
+                {
+                    "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+                    "name": "Contact (Pro)"
+                }
+            ],
+            "filesize": 55195,
+            "dimensions": [
+                740,
+                680
+            ]
+        },
+        {
+            "filename": "huumans-sitting-1.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/huumans-sitting-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                }
+            ],
+            "filesize": 21858,
+            "dimensions": [
+                380,
+                400
+            ]
+        },
+        {
+            "filename": "startup.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/startup.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/services-2-40b12d9f08915ba5447d2bbfb62b83f0.json",
+                    "name": "Services 2"
+                },
+                {
+                    "source": "templates\/single-product-e2e01a302162524d8bc024dcacd53cdb.json",
+                    "name": "Single Product"
+                }
+            ],
+            "filesize": 4358,
+            "dimensions": [
+                131,
+                130
+            ]
+        },
+        {
+            "filename": "puzzle.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/puzzle.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/benefits-pro-49b193c52d46999604daaccd1011dedd.json",
+                    "name": "Benefits (Pro)"
+                },
+                {
+                    "source": "templates\/services-2-40b12d9f08915ba5447d2bbfb62b83f0.json",
+                    "name": "Services 2"
+                },
+                {
+                    "source": "templates\/single-product-e2e01a302162524d8bc024dcacd53cdb.json",
+                    "name": "Single Product"
+                },
+                {
+                    "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+                    "name": "Contact (Pro)"
+                }
+            ],
+            "filesize": 2995,
+            "dimensions": [
+                130,
+                130
+            ]
+        },
+        {
+            "filename": "idea.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/idea.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3-5b16c3486bc9024ae3e301e2a7040298.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/benefits-pro-49b193c52d46999604daaccd1011dedd.json",
+                    "name": "Benefits (Pro)"
+                },
+                {
+                    "source": "templates\/services-2-40b12d9f08915ba5447d2bbfb62b83f0.json",
+                    "name": "Services 2"
+                },
+                {
+                    "source": "templates\/single-product-e2e01a302162524d8bc024dcacd53cdb.json",
+                    "name": "Single Product"
+                },
+                {
+                    "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+                    "name": "Contact (Pro)"
+                }
+            ],
+            "filesize": 3264,
+            "dimensions": [
+                126,
+                130
+            ]
+        },
+        {
+            "filename": "undraw_mobile_testing_reah-recolor.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/undraw_mobile_testing_reah-recolor.png",
+            "templates": [
+                {
+                    "source": "templates\/benefits-pro-49b193c52d46999604daaccd1011dedd.json",
+                    "name": "Benefits (Pro)"
+                },
+                {
+                    "source": "templates\/single-product-e2e01a302162524d8bc024dcacd53cdb.json",
+                    "name": "Single Product"
+                },
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                },
+                {
+                    "source": "templates\/careers-389537e2f3d711cefe05223e61cb4cf5.json",
+                    "name": "Careers"
+                }
+            ],
+            "filesize": 46581,
+            "dimensions": [
+                470,
+                417
+            ]
+        },
+        {
+            "filename": "humaans1.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/humaans1.png",
+            "templates": [
+                {
+                    "source": "templates\/benefits-pro-49b193c52d46999604daaccd1011dedd.json",
+                    "name": "Benefits (Pro)"
+                },
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                }
+            ],
+            "filesize": 93075,
+            "dimensions": [
+                470,
+                417
+            ]
+        },
+        {
+            "filename": "message.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/message.png",
+            "templates": [
+                {
+                    "source": "templates\/benefits-pro-49b193c52d46999604daaccd1011dedd.json",
+                    "name": "Benefits (Pro)"
+                },
+                {
+                    "source": "templates\/contact-pro-fdacf22daecdac1468583c8bd9aed445.json",
+                    "name": "Contact (Pro)"
+                }
+            ],
+            "filesize": 2567,
+            "dimensions": [
+                98,
+                91
+            ]
+        },
+        {
+            "filename": "clipboard.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/clipboard.png",
+            "templates": [
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                }
+            ],
+            "filesize": 2461,
+            "dimensions": [
+                60,
+                61
+            ]
+        },
+        {
+            "filename": "abdelkader-ft-1574103-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/abdelkader-ft-1574103-unsplash-500x750.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                },
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                },
+                {
+                    "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 2434830,
+            "dimensions": [
+                1920,
+                2880
+            ]
+        },
+        {
+            "filename": "toa-heftiba-ukvkvS2Wdlw-unsplash-e1564392800557.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/toa-heftiba-ukvkvS2Wdlw-unsplash-500x750.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                },
+                {
+                    "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 226446,
+            "dimensions": [
+                853,
+                1280
+            ]
+        },
+        {
+            "filename": "toa-heftiba-2RFwLL-YX44-unsplash.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/toa-heftiba-2RFwLL-YX44-unsplash-500x750.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services-pro-aa8c69137251878690c0e4ae64f2788b.json",
+                    "name": "Services (Pro)"
+                },
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                },
+                {
+                    "source": "templates\/about-e8a0b013042ccb3226d1ee99d9966d6e.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 2751354,
+            "dimensions": [
+                1920,
+                2880
+            ]
+        },
+        {
+            "filename": "azamat-zhanisov-s-rUgzoHn4g-unsplash-e1564392847134.jpg",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/azamat-zhanisov-s-rUgzoHn4g-unsplash-500x734.jpg",
+            "templates": [
+                {
+                    "source": "templates\/pricing-pro-2413a22cba87fe2ccb200c0b6c844711.json",
+                    "name": "Pricing (Pro)"
+                }
+            ],
+            "filesize": 124327,
+            "dimensions": [
+                872,
+                1280
+            ]
+        },
+        {
+            "filename": "head4.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/head4.png",
+            "templates": [
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                }
+            ],
+            "filesize": 11318,
+            "dimensions": [
+                266,
+                199
+            ]
+        },
+        {
+            "filename": "head3.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/head3.png",
+            "templates": [
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                }
+            ],
+            "filesize": 9202,
+            "dimensions": [
+                266,
+                199
+            ]
+        },
+        {
+            "filename": "head2.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/head2.png",
+            "templates": [
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                }
+            ],
+            "filesize": 10615,
+            "dimensions": [
+                266,
+                199
+            ]
+        },
+        {
+            "filename": "head1.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/head1.png",
+            "templates": [
+                {
+                    "source": "templates\/about-2-5e86a717d7b84e101bd2cf1dfbf41e23.json",
+                    "name": "About 2"
+                }
+            ],
+            "filesize": 21644,
+            "dimensions": [
+                266,
+                199
+            ]
+        },
+        {
+            "filename": "time.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/time.png",
+            "templates": [
+                {
+                    "source": "templates\/careers-389537e2f3d711cefe05223e61cb4cf5.json",
+                    "name": "Careers"
+                }
+            ],
+            "filesize": 3553,
+            "dimensions": [
+                60,
+                60
+            ]
+        },
+        {
+            "filename": "chair.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/chair.png",
+            "templates": [
+                {
+                    "source": "templates\/careers-389537e2f3d711cefe05223e61cb4cf5.json",
+                    "name": "Careers"
+                }
+            ],
+            "filesize": 1763,
+            "dimensions": [
+                42,
+                61
+            ]
+        },
+        {
+            "filename": "health.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/health.png",
+            "templates": [
+                {
+                    "source": "templates\/careers-389537e2f3d711cefe05223e61cb4cf5.json",
+                    "name": "Careers"
+                }
+            ],
+            "filesize": 2154,
+            "dimensions": [
+                68,
+                60
+            ]
+        },
+        {
+            "filename": "aum-cc05-recolor.png",
+            "thumbnail_url": "https:\/\/wp.envatoextensions.com\/kit-175\/wp-content\/uploads\/sites\/171\/2019\/07\/aum-cc05-recolor-500x460.png",
+            "templates": [
+                {
+                    "source": "templates\/contact-2-d48a03ce8beacb3185876c1160c9a66b.json",
+                    "name": "Contact 2"
+                }
+            ],
+            "filesize": 190035,
+            "dimensions": [
+                718,
+                660
+            ]
+        }
+    ]
+}

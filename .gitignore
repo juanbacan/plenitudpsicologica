@@ -1,0 +1,36 @@
+# Ignorar archivos de entorno
+.env
+.env.*
+
+# Ignorar volúmenes de datos y sitios
+# volumes/db/
+# volumes/site/
+
+# Ignorar configuraciones específicas del entorno
+# volumes/config/php/conf.d/custom-php.ini
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de respaldo
+*.bak
+*.old
+*.swp
+*.swo
+
+# Ignorar archivos de usuario de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (si usas npm en algún punto del proyecto)
+node_modules/
+
+# Ignorar archivos temporales de WordPress (por si WordPress genera algunos)
+wp-content/cache/
+wp-content/upgrade/
