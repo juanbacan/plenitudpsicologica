@@ -40,10 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+    
     document.querySelectorAll('.toggle-comentarios').forEach(btn => {
         btn.addEventListener('click', function () {
-            const index = this.dataset.solIndex;
-            const box = document.getElementById('comentarios-' + index);
+            const index = this.dataset.solId;
+            console.log(index);
+            const box = document.getElementById('comentarios-box-' + index);
             box.style.display = box.style.display === 'none' ? 'block' : 'none';
         });
     });
@@ -72,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 if (data.success) {
                     textarea.value = '';
-                    const lista = document.querySelector(`#comentarios-${solIndex} .lista-comentarios`);
+                    const lista = document.getElementById(`comentarios-${solId}`);
                     const nuevo = document.createElement('p');
                     nuevo.innerHTML = `<strong>${data.data.usuario}:</strong> ${data.data.texto}`;
                     lista.appendChild(nuevo);

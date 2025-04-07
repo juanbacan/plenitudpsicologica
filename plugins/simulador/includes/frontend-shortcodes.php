@@ -211,24 +211,23 @@ add_shortcode('ver_soluciones', function () {
                 <?php endif; ?>
                 <button 
                     class="btn btn-comentar toggle-comentarios" 
-                    data-sol-index="<?= $index ?>">
+                    data-sol-id="<?= esc_attr($solucion['sol_id']) ?>">
                     💬 Comentar
                 </button>
             </div>
-            <div class="comentarios-box" id="comentarios-<?= $index ?>" style="display: none;">
-                <div class="lista-comentarios">
-                    <?php foreach ($comentarios as $comentario): 
-                        $coment_user = get_userdata($comentario->user_id);
-                    ?>
-                        <p>
-                            <strong><?= esc_html($coment_user->display_name ?? 'Anónimo') ?>:</strong>
-                            <?= esc_html($comentario->comentario) ?>
-                        </p>
-                    <?php endforeach; ?>
-                </div>
-
+            <div class="lista-comentarios" id="comentarios-<?= esc_attr($solucion['sol_id']) ?>">
+                <?php foreach ($comentarios as $comentario): 
+                    $coment_user = get_userdata($comentario->user_id);
+                ?>
+                    <p>
+                        <strong><?= esc_html($coment_user->display_name ?? 'Anónimo') ?>:</strong>
+                        <?= esc_html($comentario->comentario) ?>
+                    </p>
+                <?php endforeach; ?>
+            </div>
+            <div id="comentarios-box-<?= esc_attr($solucion['sol_id']) ?>" style="display: none;">
                 <?php if (is_user_logged_in()): ?>
-                    <textarea class="comentario-textarea" rows="2" placeholder="Escribe un comentario..."></textarea>
+                    <textarea style="width: 100%;" class="comentario-textarea" rows="2" placeholder="Escribe un comentario..."></textarea>
                     <button 
                         class="btn btn-enviar-comentario" 
                         data-post-id="<?= $post->ID ?>" 
