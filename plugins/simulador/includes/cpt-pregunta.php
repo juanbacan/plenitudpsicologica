@@ -1,6 +1,5 @@
 <?php
 
-
 add_action('init', function () {
     register_post_type('pregunta', [
         'labels' => [
@@ -35,17 +34,28 @@ add_action('init', function () {
     ]);
 });
 
+function generar_slug_unico_para_pregunta() {
+    do {
+        $slug = strtolower(bin2hex(random_bytes(4))); // genera 8 caracteres hex (similar a BSON corto)
+        $existe = get_page_by_path($slug, OBJECT, 'pregunta');
+    } while ($existe);
+
+    return $slug;
+}
+
+
 add_filter('wp_insert_post_data', function ($data, $postarr) {
-    // Solo afecta al tipo 'pregunta'
     if ($data['post_type'] === 'pregunta') {
-        // Solo si no tiene título
-        // if (empty($data['post_title'])) {
-            // Limpiar el contenido y extraer una línea como título
+        // Generar título desde contenido
         $content = strip_tags($data['post_content']);
         $content = trim(preg_replace('/\s+/', ' ', $content));
-        $title = mb_substr($content, 0, 60); // Máx 60 caracteres
+        $title = mb_substr($content, 0, 60);
         $data['post_title'] = $title ?: 'Pregunta sin título';
-        // }
+
+        // Si no hay slug definido aún, generar uno tipo BSON
+        if (empty($postarr['post_name'])) {
+            $data['post_name'] = generar_slug_unico_para_pregunta();
+        }
     }
     return $data;
 }, 10, 2);
@@ -137,7 +147,7 @@ function mostrar_respuestas_inline($post)
                         menubar: true,
                         toolbar: 'formatselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link removeformat undo redo',
                         plugins: 'lists link',
-                        height: 200,
+                        height: 100,
                         branding: false
                     });
                 });
@@ -172,14 +182,27 @@ add_action('save_post_pregunta', function ($post_id) {
         delete_post_meta($post_id, '_respuestas');
     }
 
+    // Guardar soluciones sin sobreescribir el user_id
     if (isset($_POST['soluciones'])) {
+        $soluciones_actuales = get_post_meta($post_id, '_soluciones', true) ?: [];
         $soluciones_sanitizadas = [];
-        foreach ($_POST['soluciones'] as $solucion) {
+
+        foreach ($_POST['soluciones'] as $index => $solucion) {
+            $contenido = wp_kses_post($solucion['contenido']);
+            $aprobada = isset($solucion['aprobada']) ? '1' : '0';
+
+            // Mantener el user_id si ya existía
+            $user_id = isset($soluciones_actuales[$index]['user_id']) 
+                ? $soluciones_actuales[$index]['user_id'] 
+                : get_current_user_id();
+
             $soluciones_sanitizadas[] = [
-                'contenido' => wp_kses_post($solucion['contenido']),
-                'aprobada' => isset($solucion['aprobada']) ? '1' : '0',
+                'contenido' => $contenido,
+                'aprobada' => $aprobada,
+                'user_id' => $user_id,
             ];
         }
+
         update_post_meta($post_id, '_soluciones', $soluciones_sanitizadas);
     } else {
         delete_post_meta($post_id, '_soluciones');
@@ -274,7 +297,7 @@ function mostrar_solucion_inline($post)
                         menubar: true,
                         toolbar: 'formatselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link removeformat undo redo',
                         plugins: 'lists link',
-                        height: 200,
+                        height: 100,
                         branding: false
                     });
                 });
