@@ -84,6 +84,46 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
-    
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('#form-agregar-solucion');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const content = tinyMCE.get('nueva_solucion_editor')?.getContent() || '';
+        const post_id = form.querySelector('[name="post_id"]').value;
+        const nonce = form.querySelector('[name="_ajax_nonce"]').value;
+
+        if (!content.trim()) {
+            alert('El contenido no puede estar vacío.');
+            return;
+        }
+
+        fetch(SimuladorLikes.ajax_url, {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams({
+                action: 'agregar_solucion',
+                contenido: content,
+                post_id: post_id,
+                _ajax_nonce: nonce
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                alert('¡Solución enviada!');
+                location.reload();
+            } else {
+                alert(data.data?.mensaje || 'Error al enviar la solución.');
+            }
+        });
+    });
+});

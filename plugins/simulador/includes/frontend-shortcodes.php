@@ -240,6 +240,26 @@ add_shortcode('ver_soluciones', function () {
             </div>
         </div>
         <?php endforeach; ?>
+
+        <?php if (is_user_logged_in()) : ?>
+            <div class="formulario-solucion">
+                <h4>¿Tienes una mejor solución?</h4>
+                <form id="form-agregar-solucion">
+                    <?php wp_editor('', 'nueva_solucion_editor', [
+                        'textarea_name' => 'contenido',
+                        'textarea_rows' => 6,
+                        'media_buttons' => false,
+                        'teeny' => true,
+                    ]); ?>
+                    <input type="hidden" name="post_id" value="<?= $post->ID ?>">
+                    <input type="hidden" name="_ajax_nonce" value="<?= wp_create_nonce('agregar_solucion_nonce') ?>">
+                    <button type="submit" class="btn btn-enviar-solucion">📩 Enviar solución</button>
+                </form>
+            </div>
+        <?php else: ?>
+            <p><em>Inicia sesión para proponer una solución.</em></p>
+        <?php endif; ?>
+
     </div>
 
     <style>

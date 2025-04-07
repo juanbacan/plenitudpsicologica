@@ -105,3 +105,36 @@ function mostrar_solucion_inline($post)
     </style>
     <?php
 }
+
+
+
+add_action('wp_ajax_agregar_solucion', 'ajax_agregar_solucion');
+
+function ajax_agregar_solucion() {
+    if (!is_user_logged_in()) {
+        wp_send_json_error(['mensaje' => 'Debes iniciar sesión.']);
+    }
+
+    check_ajax_referer('agregar_solucion_nonce');
+
+    $post_id = absint($_POST['post_id']);
+    $contenido = wp_kses_post($_POST['contenido']);
+
+    if (!$post_id || !$contenido) {
+        wp_send_json_error(['mensaje' => 'Datos inválidos.']);
+    }
+
+    $soluciones = get_post_meta($post_id, '_soluciones', true) ?: [];
+
+    $soluciones[] = [
+        'contenido' => $contenido,
+        'aprobada' => '0',
+        'user_id' => get_current_user_id(),
+        'fecha' => current_time('mysql'),
+        'sol_id' => strtolower(bin2hex(random_bytes(5)))
+    ];
+
+    update_post_meta($post_id, '_soluciones', $soluciones);
+
+    wp_send_json_success(['mensaje' => 'Solución guardada.']);
+}
