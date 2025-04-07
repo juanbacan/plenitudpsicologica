@@ -52,11 +52,11 @@ add_shortcode('ver_pregunta', function ($atts) {
         .pregunta-enunciado h3 {
             margin-bottom: 0.5rem;
             color: #d6336c; /* rosado estilo título */
-            font-size: 1.2rem;
+            /* font-size: 1.2rem; */
         }
 
         .pregunta-enunciado p {
-            font-size: 1.1rem;
+            /* font-size: 1.1rem; */
             font-weight: 500;
             margin-bottom: 1.5rem;
         }
@@ -152,15 +152,21 @@ add_shortcode('ver_soluciones', function () {
     ?>
     <div class="soluciones-box">
         <h3>Soluciones</h3>
-        <?php foreach ($soluciones as $index => $solucion): 
+        <?php foreach ($soluciones as $solucion): 
             $user_id = $solucion['user_id'] ?? null;
             $usuario = $user_id ? get_userdata($user_id) : null;
             $nombre = $usuario ? $usuario->display_name : 'Anónimo';
             $avatar = $usuario ? get_avatar_url($user_id, ['size' => 48]) : '';
             $es_aprobada = $solucion['aprobada'] === '1';
-            $likes = obtener_likes_solucion($post->ID, $index);
-            $ya_dio_like = is_user_logged_in() ? usuario_ya_dio_like($post->ID, $index, get_current_user_id()) : false;
-            $comentarios = obtener_comentarios_de_solucion($post->ID, $index);
+            
+            $sol_id = $solucion['sol_id'] ?? null;
+
+            $likes = obtener_likes_solucion($post->ID, $sol_id);
+            $ya_dio_like = is_user_logged_in() ? usuario_ya_dio_like($post->ID, $sol_id, get_current_user_id()) : false;
+            $comentarios = obtener_comentarios_de_solucion($post->ID, $sol_id);
+            $fecha = !empty($solucion['fecha']) 
+                ? human_time_diff(strtotime($solucion['fecha']), current_time('timestamp')) 
+                : 'Fecha desconocida';
         ?>
         <div class="solucion-tarjeta">
             <div class="solucion-encabezado">
@@ -172,7 +178,7 @@ add_shortcode('ver_soluciones', function () {
                             <span class="etiqueta-solucion">Solución aprobada</span>
                         <?php endif; ?>
                     </div>
-                    <span class="fecha">hace <?= human_time_diff(get_the_time('U', $post->ID), current_time('timestamp')) ?></span>
+                    <span class="fecha">hace <?= esc_html($fecha) ?></span>
                 </div>
                 <div class="acciones-solucion">
                     <span>❤️ <span class="likes-count"><?= $likes ?></span></span>
@@ -194,7 +200,7 @@ add_shortcode('ver_soluciones', function () {
                         <button 
                             class="btn btn-rojo btn-like-solucion" 
                             data-post-id="<?= $post->ID ?>" 
-                            data-sol-index="<?= $index ?>">
+                            data-sol-id="<?= esc_attr($solucion['sol_id']) ?>">
                             ❤️ Gracias <span class="likes-count"><?= $likes ?></span>
                         </button>
                     <?php endif; ?>
@@ -226,7 +232,7 @@ add_shortcode('ver_soluciones', function () {
                     <button 
                         class="btn btn-enviar-comentario" 
                         data-post-id="<?= $post->ID ?>" 
-                        data-sol-index="<?= $index ?>">
+                        data-sol-id="<?= esc_attr($solucion['sol_id']) ?>">
                         📩 Enviar
                     </button>
                 <?php else: ?>

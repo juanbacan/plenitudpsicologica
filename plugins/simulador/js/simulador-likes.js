@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.btn-like-solucion').forEach(btn => {
         btn.addEventListener('click', function () {
             const postId = this.dataset.postId;
-            const solIndex = this.dataset.solIndex;
+            const solId = this.dataset.solId;
             const likesSpan = this.querySelector('.likes-count');
 
             fetch(SimuladorLikes.ajax_url, {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 body: new URLSearchParams({
                     action: 'dar_like_solucion',
                     post_id: postId,
-                    sol_index: solIndex,
+                    sol_id: solId,
                     _ajax_nonce: SimuladorLikes.nonce
                 })
             })
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.btn-enviar-comentario').forEach(btn => {
         btn.addEventListener('click', function () {
             const postId = this.dataset.postId;
-            const solIndex = this.dataset.solIndex;
+            const solId = this.dataset.solId;
             const textarea = this.previousElementSibling;
             const texto = textarea.value.trim();
             if (!texto) return;
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 body: new URLSearchParams({
                     action: 'enviar_comentario_solucion',
                     post_id: postId,
-                    sol_index: solIndex,
+                    sol_id: solId,
                     texto: texto,
                     _ajax_nonce: SimuladorLikes.nonce
                 })

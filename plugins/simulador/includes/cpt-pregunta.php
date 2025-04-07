@@ -34,6 +34,9 @@ add_action('init', function () {
     ]);
 });
 
+require_once plugin_dir_path(__FILE__) . 'respuestas.php';
+require_once plugin_dir_path(__FILE__) . 'soluciones.php';
+
 function generar_slug_unico_para_pregunta() {
     do {
         $slug = strtolower(bin2hex(random_bytes(4))); // genera 8 caracteres hex (similar a BSON corto)
@@ -42,7 +45,6 @@ function generar_slug_unico_para_pregunta() {
 
     return $slug;
 }
-
 
 add_filter('wp_insert_post_data', function ($data, $postarr) {
     if ($data['post_type'] === 'pregunta') {
@@ -59,112 +61,6 @@ add_filter('wp_insert_post_data', function ($data, $postarr) {
     }
     return $data;
 }, 10, 2);
-
-// Agregar meta box para respuestas en línea
-add_action('add_meta_boxes', function () {
-    add_meta_box(
-        'respuestas_inline',
-        'Respuestas de esta pregunta',
-        'mostrar_respuestas_inline',
-        'pregunta',
-        'normal',
-        'default'
-    );
-});
-
-function mostrar_respuestas_inline($post)
-{
-    $respuestas = get_post_meta($post->ID, '_respuestas', true) ?: [];
-    ?>
-    <div id="respuestas-container">
-        <?php foreach ($respuestas as $index => $respuesta): ?>
-            <div class="respuesta-item" data-index="<?= $index ?>">
-                <h4>Respuesta <?= $index + 1 ?></h4>
-                <textarea name="respuestas[<?= $index ?>][enunciado]" class="editor"><?= esc_textarea($respuesta['enunciado']) ?></textarea>
-                <p>
-                    <label>
-                        <input type="checkbox" name="respuestas[<?= $index ?>][correcta]" value="1" <?= !empty($respuesta['correcta']) ? 'checked' : '' ?>>
-                        ¿Es correcta?
-                    </label>
-                </p>
-                <button type="button" class="button button-secondary eliminar-respuesta">Eliminar</button>
-                <hr>
-            </div>
-        <?php endforeach; ?>
-    </div>
-
-    <button type="button" class="button button-primary" id="agregar-respuesta">+ Añadir respuesta</button>
-
-    <template id="respuesta-template">
-        <div class="respuesta-item" data-index="{index}">
-            <h4>Respuesta {numero}</h4>
-            <textarea name="respuestas[{index}][enunciado]" class="editor"></textarea>
-            <p>
-                <label>
-                    <input type="checkbox" name="respuestas[{index}][correcta]" value="1">
-                    ¿Es correcta?
-                </label>
-            </p>
-            <button type="button" class="button button-secondary eliminar-respuesta">Eliminar</button>
-            <hr>
-        </div>
-    </template>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let container = document.getElementById('respuestas-container');
-            let template = document.getElementById('respuesta-template').innerHTML;
-            let btnAgregar = document.getElementById('agregar-respuesta');
-            let total = container.children.length;
-
-            // Inicializar los editores existentes
-            initTinyMCE();
-
-            btnAgregar.addEventListener('click', function () {
-                const index = total++;
-                const html = template.replaceAll('{index}', index).replaceAll('{numero}', index + 1);
-                const div = document.createElement('div');
-                div.innerHTML = html;
-                container.appendChild(div.firstElementChild);
-                initTinyMCE(`#respuestas-container .respuesta-item:last-child .editor`);
-            });
-
-            container.addEventListener('click', function (e) {
-                if (e.target.classList.contains('eliminar-respuesta')) {
-                    const item = e.target.closest('.respuesta-item');
-                    const editorId = item.querySelector('textarea').id;
-                    if (tinymce.get(editorId)) tinymce.get(editorId).remove();
-                    item.remove();
-                }
-            });
-
-            function initTinyMCE(selector = '.editor') {
-                document.querySelectorAll(selector).forEach((el) => {
-                    if (!el.id) el.id = 'editor_' + Math.random().toString(36).substring(2, 10);
-                    if (tinymce.get(el.id)) tinymce.get(el.id).remove();
-                    tinymce.init({
-                        selector: '#' + el.id,
-                        menubar: true,
-                        toolbar: 'formatselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link removeformat undo redo',
-                        plugins: 'lists link',
-                        height: 100,
-                        branding: false
-                    });
-                });
-            }
-        });
-    </script>
-    <style>
-        .respuesta-item {
-            background: #f9f9f9;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-left: 4px solid #0073aa;
-        }
-    </style>
-    <?php
-}
-
 
 
 add_action('save_post_pregunta', function ($post_id) {
@@ -190,16 +86,26 @@ add_action('save_post_pregunta', function ($post_id) {
         foreach ($_POST['soluciones'] as $index => $solucion) {
             $contenido = wp_kses_post($solucion['contenido']);
             $aprobada = isset($solucion['aprobada']) ? '1' : '0';
-
+        
             // Mantener el user_id si ya existía
             $user_id = isset($soluciones_actuales[$index]['user_id']) 
                 ? $soluciones_actuales[$index]['user_id'] 
                 : get_current_user_id();
+        
+            // Mantener o generar sol_id único
+            $sol_id = isset($soluciones_actuales[$index]['sol_id']) 
+                ? $soluciones_actuales[$index]['sol_id'] 
+                : substr(bin2hex(random_bytes(5)), 0, 10);
 
+            // Guardar la fecha si ya existe, o crear una nueva
+            $fecha = $soluciones_actuales[$index]['fecha'] ?? current_time('mysql');
+        
             $soluciones_sanitizadas[] = [
                 'contenido' => $contenido,
                 'aprobada' => $aprobada,
                 'user_id' => $user_id,
+                'sol_id' => $sol_id,
+                'fecha' => $fecha,
             ];
         }
 
@@ -208,110 +114,3 @@ add_action('save_post_pregunta', function ($post_id) {
         delete_post_meta($post_id, '_soluciones');
     }
 });
-
-
-add_action('add_meta_boxes', function () {
-    add_meta_box(
-        'solucion_inline',
-        'Solución de esta pregunta',
-        'mostrar_solucion_inline',
-        'pregunta',
-        'normal',
-        'default'
-    );
-});
-
-function mostrar_solucion_inline($post)
-{
-    $soluciones = get_post_meta($post->ID, '_soluciones', true) ?: [];
-
-    ?>
-    <div id="soluciones-container">
-        <?php foreach ($soluciones as $index => $sol): ?>
-            <div class="solucion-item" data-index="<?= $index ?>">
-                <h4>Solución <?= $index + 1 ?></h4>
-                <textarea name="soluciones[<?= $index ?>][contenido]" class="editor"><?= esc_textarea($sol['contenido']) ?></textarea>
-                <p>
-                    <label>
-                        <input type="checkbox" name="soluciones[<?= $index ?>][aprobada]" value="1" <?= !empty($sol['aprobada']) ? 'checked' : '' ?>>
-                        ¿Aprobada?
-                    </label>
-                </p>
-                <button type="button" class="button eliminar-solucion">Eliminar</button>
-                <hr>
-            </div>
-        <?php endforeach; ?>
-    </div>
-
-    <button type="button" class="button button-primary" id="agregar-solucion">+ Añadir solución</button>
-
-    <template id="solucion-template">
-        <div class="solucion-item" data-index="{index}">
-            <h4>Solución {numero}</h4>
-            <textarea name="soluciones[{index}][contenido]" class="editor"></textarea>
-            <p>
-                <label>
-                    <input type="checkbox" name="soluciones[{index}][aprobada]" value="1">
-                    ¿Aprobada?
-                </label>
-            </p>
-            <button type="button" class="button eliminar-solucion">Eliminar</button>
-            <hr>
-        </div>
-    </template>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const container = document.getElementById('soluciones-container');
-            const template = document.getElementById('solucion-template').innerHTML;
-            const btnAgregar = document.getElementById('agregar-solucion');
-            let total = container.children.length;
-
-            // Inicializar editores existentes
-            initTinyMCE('#soluciones-container .editor');
-
-            btnAgregar.addEventListener('click', function () {
-                const index = total++;
-                const html = template.replaceAll('{index}', index).replaceAll('{numero}', index + 1);
-                const div = document.createElement('div');
-                div.innerHTML = html;
-                container.appendChild(div.firstElementChild);
-                initTinyMCE(`#soluciones-container .solucion-item:last-child .editor`);
-            });
-
-            container.addEventListener('click', function (e) {
-                if (e.target.classList.contains('eliminar-solucion')) {
-                    const item = e.target.closest('.solucion-item');
-                    const textarea = item.querySelector('textarea');
-                    if (tinymce.get(textarea.id)) tinymce.get(textarea.id).remove();
-                    item.remove();
-                }
-            });
-
-            function initTinyMCE(selector = '.editor') {
-                document.querySelectorAll(selector).forEach((el) => {
-                    if (!el.id) el.id = 'editor_' + Math.random().toString(36).substring(2, 10);
-                    if (tinymce.get(el.id)) tinymce.get(el.id).remove();
-                    tinymce.init({
-                        selector: '#' + el.id,
-                        menubar: true,
-                        toolbar: 'formatselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link removeformat undo redo',
-                        plugins: 'lists link',
-                        height: 100,
-                        branding: false
-                    });
-                });
-            }
-        });
-    </script>
-
-    <style>
-        .solucion-item {
-            background: #f1f1f1;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-left: 4px solid #00a32a;
-        }
-    </style>
-    <?php
-}

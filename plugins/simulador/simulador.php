@@ -30,17 +30,17 @@ function crear_tablas() {
     dbDelta("CREATE TABLE IF NOT EXISTS $tabla_likes (
         id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         post_id BIGINT UNSIGNED NOT NULL,
-        sol_index INT UNSIGNED NOT NULL,
+        sol_id VARCHAR(20) NOT NULL,
         user_id BIGINT UNSIGNED NOT NULL,
         fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
-        UNIQUE KEY unique_like (post_id, sol_index, user_id)
+        UNIQUE KEY unique_like (post_id, sol_id, user_id)
     ) $charset_collate;");
 
     $tabla_comentarios = $wpdb->prefix . 'simulador_solucion_comentarios';
     dbDelta("CREATE TABLE IF NOT EXISTS $tabla_comentarios (
         id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         post_id BIGINT UNSIGNED NOT NULL,
-        sol_index INT UNSIGNED NOT NULL,
+        sol_id VARCHAR(20) NOT NULL,
         user_id BIGINT UNSIGNED NOT NULL,
         comentario TEXT NOT NULL,
         fecha DATETIME DEFAULT CURRENT_TIMESTAMP

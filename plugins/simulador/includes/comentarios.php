@@ -11,13 +11,13 @@ function ajax_enviar_comentario_solucion() {
     $tabla = $wpdb->prefix . 'simulador_solucion_comentarios';
 
     $post_id = absint($_POST['post_id']);
-    $sol_index = absint($_POST['sol_index']);
+    $sol_id = sanitize_text_field($_POST['sol_id']);
     $comentario = sanitize_text_field($_POST['texto']);
     $user_id = get_current_user_id();
 
     $wpdb->insert($tabla, [
         'post_id' => $post_id,
-        'sol_index' => $sol_index,
+        'sol_id' => $sol_id,
         'user_id' => $user_id,
         'comentario' => $comentario,
         'fecha' => current_time('mysql')
@@ -31,12 +31,12 @@ function ajax_enviar_comentario_solucion() {
     ]);
 }
 
-function obtener_comentarios_de_solucion($post_id, $sol_index) {
+function obtener_comentarios_de_solucion($post_id, $sol_id) {
     global $wpdb;
     $tabla = $wpdb->prefix . 'simulador_solucion_comentarios';
 
     return $wpdb->get_results($wpdb->prepare(
-        "SELECT * FROM $tabla WHERE post_id = %d AND sol_index = %d ORDER BY fecha ASC",
-        $post_id, $sol_index
+        "SELECT * FROM $tabla WHERE post_id = %d AND sol_id = %s ORDER BY fecha ASC",
+        $post_id, $sol_id
     ));
 }
