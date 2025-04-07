@@ -160,6 +160,7 @@ add_shortcode('ver_soluciones', function () {
             $es_aprobada = $solucion['aprobada'] === '1';
             $likes = obtener_likes_solucion($post->ID, $index);
             $ya_dio_like = is_user_logged_in() ? usuario_ya_dio_like($post->ID, $index, get_current_user_id()) : false;
+            $comentarios = obtener_comentarios_de_solucion($post->ID, $index);
         ?>
         <div class="solucion-tarjeta">
             <div class="solucion-encabezado">
@@ -202,7 +203,35 @@ add_shortcode('ver_soluciones', function () {
                         ❤️ Gracias
                     </button>
                 <?php endif; ?>
-                <button class="btn btn-comentar">💬 Comentar</button>
+                <button 
+                    class="btn btn-comentar toggle-comentarios" 
+                    data-sol-index="<?= $index ?>">
+                    💬 Comentar
+                </button>
+            </div>
+            <div class="comentarios-box" id="comentarios-<?= $index ?>" style="display: none;">
+                <div class="lista-comentarios">
+                    <?php foreach ($comentarios as $comentario): 
+                        $coment_user = get_userdata($comentario->user_id);
+                    ?>
+                        <p>
+                            <strong><?= esc_html($coment_user->display_name ?? 'Anónimo') ?>:</strong>
+                            <?= esc_html($comentario->comentario) ?>
+                        </p>
+                    <?php endforeach; ?>
+                </div>
+
+                <?php if (is_user_logged_in()): ?>
+                    <textarea class="comentario-textarea" rows="2" placeholder="Escribe un comentario..."></textarea>
+                    <button 
+                        class="btn btn-enviar-comentario" 
+                        data-post-id="<?= $post->ID ?>" 
+                        data-sol-index="<?= $index ?>">
+                        📩 Enviar
+                    </button>
+                <?php else: ?>
+                    <p><em>Inicia sesión para comentar</em></p>
+                <?php endif; ?>
             </div>
         </div>
         <?php endforeach; ?>
@@ -301,6 +330,14 @@ add_shortcode('ver_soluciones', function () {
             background: none;
             border: none;
             font-size: 1rem;
+        }
+
+        .comentarios-box {
+            margin-top: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 1px solid #ddd;
         }
     </style>
 
