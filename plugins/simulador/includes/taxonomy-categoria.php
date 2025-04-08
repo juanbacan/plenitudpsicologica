@@ -4,14 +4,17 @@
 add_action('init', function () {
     register_taxonomy('categoria', 'pregunta', [
         'labels' => [
-            'name' => 'Categorías',
-            'singular_name' => 'Categoría',
+            'name' => 'Categorías Preguntas',
+            'singular_name' => 'Categoría Preguntas',
         ],
+        'public' => true,
         'hierarchical' => true,
         'show_in_menu' => false,
         'show_in_rest' => true,
         'show_ui' => true,
         'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => ['slug' => 'categoria'],
     ]);
 });
 
