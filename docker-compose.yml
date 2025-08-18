@@ -19,7 +19,9 @@ services:
     image: mysql:8.0
     container_name: ${PROJECT_NAME}_db # Nombre único del contenedor
     restart: always
-    command: --lower_case_table_names=1
+    command: >
+      --lower_case_table_names=1
+      --skip-log-bin
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
@@ -27,3 +29,8 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: ${MYSQL_RANDOM_ROOT_PASSWORD}
     volumes:
       - ./volumes/db/:/var/lib/mysql # Datos de la base de datos
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "3"
